@@ -1,0 +1,32 @@
+[project]
+name = "best-group-photo-selector"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10.0.0",
+    "opencv-python-headless>=4.8.0",
+    "imagehash>=4.3.1",
+    "exifread>=3.0.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.65.0",
+    "mediapipe>=0.10.0",
+    "insightface>=0.7.3",
+    "onnxruntime>=1.16.0",
+]
+
+[project.optional-dependencies]
+# Uncomment to enable HEIC/HEIF support (iPhone photos):
+# heic = [
+#     "pillow-heif>=0.13.0",
+# ]
+
+# Uncomment to enable CLIP aesthetic scoring (GPU optional):
+# clip = [
+#     "open-clip-torch>=2.20.0",
+#     "torch>=2.0.0",
+#     "torchvision>=0.15.0",
+# ]
+
+[dependency-groups]
+dev = []
